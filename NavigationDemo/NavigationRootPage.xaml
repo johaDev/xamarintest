@@ -4,22 +4,22 @@
 		xmlns:local="clr-namespace:NavigationDemo" 
 		x:Class="NavigationDemo.NavigationRootPage">
 
-	<ContentPage.Content >
+	<ContentPage.Content>
 		<StackLayout Padding="10" >
 			
 			<Label Text="Welcome Xamarin Friends"  HorizontalOptions="Center" />
 	
 			<Button
 				x:Name="btOne" 
-				Text="Click me" 
+				Text="Click for Alert" 
 				HorizontalOptions="Center" 
 				Clicked="OnBt1Clicked"/>	
 			
 			<Button x:Name="btTwo" Text="Click me too" HorizontalOptions="Center" Clicked="OnBt2Clicked"/>
 			<Entry x:Name="firstName" Placeholder="your name please" TextChanged="OnTextChanged"/>
 
-			<Button x:Name="btShowSimplePage1" Text="Simple Page 1" Clicked="OnShowSimplePage1"/>
-			<Button x:Name="btShowSimplePage2" Text="Simple Page 2" Clicked="OnShowSimplePage2"/>
+			<Button x:Name="btShowSimplePage1" Text="C# Page" Clicked="OnShowSimplePage1"/>
+			<Button x:Name="btShowSimplePage2" Text="XAML Page" Clicked="OnShowSimplePage2"/>
 
 			
 			<Label Text="{Binding firstName.Text}"  HorizontalOptions="Center" />			
