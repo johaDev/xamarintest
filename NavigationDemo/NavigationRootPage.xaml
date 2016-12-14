@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:NavigationDemo" 
+		x:Class="NavigationDemo.NavigationRootPage">
+
+	<ContentPage.Content >
+		<StackLayout Padding="10" >
+			
+			<Label Text="Welcome Xamarin Friends"  HorizontalOptions="Center" />
+	
+			<Button
+				x:Name="btOne" 
+				Text="Click me" 
+				HorizontalOptions="Center" 
+				Clicked="OnBt1Clicked"/>	
+			
+			<Button x:Name="btTwo" Text="Click me too" HorizontalOptions="Center" Clicked="OnBt2Clicked"/>
+			<Entry x:Name="firstName" Placeholder="your name please" TextChanged="OnTextChanged"/>
+
+			<Button x:Name="btShowSimplePage1" Text="Simple Page 1" Clicked="OnShowSimplePage1"/>
+			<Button x:Name="btShowSimplePage2" Text="Simple Page 2" Clicked="OnShowSimplePage2"/>
+
+			
+			<Label Text="{Binding firstName.Text}"  HorizontalOptions="Center" />			
+
+		</StackLayout>
+		
+	</ContentPage.Content>
+	<ContentPage.Title >Root Page</ContentPage.Title>
+
+
+</ContentPage>
